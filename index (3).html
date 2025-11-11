@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CV - Alssainy Diallo</title>
+
+  <!-- CSS principal -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Icônes Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+  <!-- Bouton pour changer de thème -->
+  <button id="theme-toggle"><i class="fa-solid fa-moon"></i> Mode Sombre</button>
+
+  <div class="cv-container">
+
+    <!-- COLONNE GAUCHE -->
+    <section class="left-side fade">
+      <div class="photo-nom">
+        <img src="image.jpg" alt="Photo de profil d’Alssainy Diallo">
+        <h1 id="nom">Alssainy Diallo</h1>
+        <h3>Étudiant en Informatique</h3>
+      </div>
+
+      <div class="contact">
+        <h2><i class="fa-solid fa-address-book"></i> Contact</h2>
+        <p><i class="fa-solid fa-envelope"></i>
+          <a href="mailto:alssainy.diallo@univ-thies.sn">alssainy.diallo@univ-thies.sn</a>
+        </p>
+        <p><i class="fa-solid fa-phone"></i> +221 77 535 08 00 <br>+221 76 924 10 30</p>
+        <p><i class="fa-solid fa-location-dot"></i> Kaolack, Sénégal</p>
+      </div>
+
+      <div class="hobies">
+        <h2><i class="fa-solid fa-heart"></i> Hobbies</h2>
+        <ul>
+          <li><i class="fa-solid fa-laptop-code"></i> Programmation</li>
+          <li><i class="fa-solid fa-book"></i> Lecture</li>
+          <li><i class="fa-solid fa-futbol"></i> Football</li>
+        </ul>
+      </div>
+
+      
+      <div class="langues fade">
+        <h2><i class="fa-solid fa-language"></i> Langues</h2>
+        <div class="skill">
+          <p>Français</p>
+          <div class="progress-bar"><div class="progress" data-width="75%"></div></div>
+        </div>
+        <div class="skill">
+          <p>Anglais</p>
+          <div class="progress-bar"><div class="progress" data-width="45%"></div></div>
+        </div>
+        <div class="skill">
+          <p>Wolof</p>
+          <div class="progress-bar"><div class="progress" data-width="85%"></div></div>
+        </div>
+        <div class="skill">
+          <p>Pulaar</p>
+          <div class="progress-bar"><div class="progress" data-width="90%"></div></div>
+        </div>
+      </div>
+
+      <div class="reseaux">
+        <h2><i class="fa-solid fa-share-nodes"></i> Réseaux sociaux</h2>
+        <ul>
+          <li><i class="fa-brands fa-youtube"></i> <a href="#">@alssainydiallo-oh8ti</a></li>
+          <li><i class="fa-brands fa-x-twitter"></i> <a href="#">@alssainy</a></li>
+          <li><i class="fa-brands fa-facebook"></i> <a href="#">Ousseynou Diallo</a></li>
+          <li><i class="fa-brands fa-instagram"></i> <a href="#">@alssainy10</a></li>
+          <li><i class="fa-brands fa-telegram"></i> <a href="#">@alssainy</a></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- COLONNE DROITE -->
+    <section class="right-side">
+
+      <div class="profil fade">
+        <h2><i class="fa-solid fa-user"></i> Profil</h2>
+        <p>
+          Étudiant en informatique passionné par le développement logiciel, la cybersécurité et l’intelligence artificielle. 
+          Curieux et rigoureux, j’aime concevoir des solutions innovantes tout en développant mes compétences à travers des projets concrets et collaboratifs.
+        </p>
+      </div>
+
+      <div class="formation fade">
+        <h2><i class="fa-solid fa-graduation-cap"></i> Formation</h2>
+        <ul>
+          <li><strong>2023 - Présent :</strong> Licence en Informatique — Université Iba Der Thiam</li>
+          <li><strong>2020 - 2023 :</strong> Baccalauréat Scientifique — Lycée Valdiodio Ndiaye</li>
+        </ul>
+      </div>
+
+      <div class="competences fade">
+        <h2><i class="fa-solid fa-gears"></i> Compétences</h2>
+        <div class="skill">
+          <p>HTML / CSS</p>
+          <div class="progress-bar"><div class="progress" data-width="90%"></div></div>
+        </div>
+        <div class="skill">
+          <p>SQL / Bases de données</p>
+          <div class="progress-bar"><div class="progress" data-width="80%"></div></div>
+        </div>
+        <div class="skill">
+          <p>Algorithmique</p>
+          <div class="progress-bar"><div class="progress" data-width="85%"></div></div>
+        </div>
+      </div>
+
+      <div class="experience fade">
+        <h2><i class="fa-solid fa-briefcase"></i> Expériences</h2>
+        <ul>
+          <li><strong>2024 :</strong> Projet universitaire — Site de gestion de bibliothèque (HTML, CSS, SQL)</li>
+          <li><strong>2023 :</strong> Stage — Maintenance et assistance technique dans une PME</li>
+        </ul>
+      </div>
+
+
+      <!-- FORMULAIRE -->
+      <div class="formulaire fade">
+        <h2><i class="fa-solid fa-paper-plane"></i> Me Contacter</h2>
+        <form id="contact-form">
+          <input type="text" placeholder="Nom" required>
+          <input type="text" placeholder="Prénom" required>
+          <input type="tel" placeholder="Numéro" required>
+          <input type="email" placeholder="Adresse Gmail" required>
+          <input type="password" placeholder="Mot de passe" required>
+          <textarea placeholder="Votre message..." rows="4" required></textarea>
+          <button type="submit">Envoyer</button>
+        </form>
+        <p id="msg"></p>
+      </div>
+
+      <footer class="fade">
+        <p>© 2025 - Alssainy Diallo</p>
+      </footer>
+    </section>
+  </div>
+
+  <script src="javascript.js"></script>
+</body>
+</html>
